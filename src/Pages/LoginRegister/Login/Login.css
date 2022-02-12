@@ -1,0 +1,120 @@
+.login {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .container {
+  background-color: #fff;
+  border-radius: 15px;
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+.login-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.login form {
+  max-width: 400px;
+}
+
+.login label {
+  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  position: relative;
+}
+
+.login input {
+  outline: none;
+  border-radius: 8px;
+  padding: 0.4rem 0.7rem;
+  border: 2px solid rgb(144, 144, 144);
+  color: var(--text);
+  font-weight: 500;
+  /* font-size: 0.8rem; */
+}
+
+.login .fa-eye,
+.login .fa-eye-slash {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.login input:focus {
+  border: 2px solid rgb(16, 158, 230);
+  background-color: rgba(129, 208, 247, 0.081);
+}
+
+.login button {
+  background-color: var(--dark-blue);
+  padding: 0.6rem;
+  color: #fff;
+  border-radius: 8px;
+  outline: none;
+  border: 0;
+  transition: 0.2s ease;
+  font-weight: 600;
+}
+
+.login button:hover {
+  background-color: #0551a9;
+}
+
+.login button:hover .fa-right-long {
+  transform: translateX(5px);
+  transition: 0.3s ease;
+}
+
+.login .vector-div {
+  background: rgb(237, 242, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(237, 242, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.fa-face-smile {
+  color: #7ea7ff;
+}
+
+.welcome {
+  color: rgb(111, 111, 111);
+  font-weight: 600;
+}
+
+#fpassword {
+  color: rgb(111, 111, 111);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+#fpassword:hover {
+  color: var(--dark-blue);
+}
+
+.register-btn p {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.register-btn a {
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+
+.password-warning {
+  color: var(--dark-blue);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
