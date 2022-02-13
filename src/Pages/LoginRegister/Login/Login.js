@@ -27,13 +27,41 @@ const Login = () => {
             axios.post(`${baseUrl}/api/login/`, inputFields)
                 .then(res => {
                     console.log(res)
-                    localStorage.setItem("isLoggedIn", "true")
-                    localStorage.setItem("USER_ID", res.data.id)
-                    setIsLoading(false)
-                    alert("Login")
-                    window.location.reload()
+                    if (res.data.id === undefined) {
+                        alert("Somthing went wrong")
+                        window.location.reload()
+                    }
+                    else {
+                        localStorage.setItem("isLoggedIn", "true")
+                        localStorage.setItem("USER_ID", res.data.id)
+                        localStorage.setItem("USER_FIRSTNAME", res.data.first_name)
+                        localStorage.setItem("USER_LASTNAME", res.data.last_name)
+                        localStorage.setItem("USER_EMAIL", res.data.email)
+                        localStorage.setItem("USER_GENDER", res.data.gender)
+                        localStorage.setItem("USER_DOB", res.data.dob)
+                        localStorage.setItem("USER_MOBILE_NO", res.data.mobile_no)
+                        setIsLoading(false)
+                        window.location.reload()
+                    }
                 })
-                .catch((error) => console.log(error))
+                // "id": 3,
+                // "email": "neha@gmail.com",
+                // "first_name": "Neha",
+                // "last_name": "Sawant",
+                // "gender": "Female",
+                // "mobile_no": "4545454545",
+                // "dob": "2002-07-16",
+                .catch((error) => {
+                    console.log(error);
+                    setIsLoading(false)
+                    window.location.reload()
+                    if (error.response.status === 400) {
+                        alert("User not Found")
+                    } else {
+                        alert("Please try again!")
+                    }
+                }
+                )
 
         } else {
             if (validator.isEmail(inputFields.email) === false) {

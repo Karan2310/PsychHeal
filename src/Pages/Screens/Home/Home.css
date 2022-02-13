@@ -1,0 +1,97 @@
+.home .avatar {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.home .logout {
+  background-color: var(--dark-blue);
+  padding: 0rem 2.5rem;
+  color: #fff;
+  border-radius: 15px;
+  outline: none;
+  border: 0;
+  transition: 0.2s ease;
+  font-weight: 600;
+}
+
+.home .logout:hover {
+  background-color: #0551a9;
+}
+
+.home .doughnut-container {
+  background-color: white;
+  border-radius: 10px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .graph-right {
+  background-color: #fff;
+  border-radius: 15px;
+  height: 50vh;
+}
+
+.carousel img {
+  object-fit: contain;
+  width: 100% !important;
+  height: auto !important;
+  margin-top: -10rem;
+}
+
+.apexcharts-legend.apx-legend-position-right {
+  display: none;
+}
+
+.home #analyze li {
+  font-size: 1.5rem !important;
+  margin: 0.5rem 0;
+}
+
+.home .suggestCard {
+  background-color: rgb(255, 211, 211);
+  padding: 0.5rem;
+  border-radius: 10px;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.home .suggestCard:hover {
+  transform: scale(1.1);
+}
+
+.home .suggestCard p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.home #card2 {
+  background-color: #afd0f5;
+}
+
+.home #card3 {
+  background-color: #eef5af;
+}
+
+.home #card4 {
+  background-color: #b5f5af;
+}
+.home #card5 {
+  background-color: #d3aff5;
+}
+
+.home #analysisImg {
+  width: 18rem;
+  position: absolute;
+  right: 5%;
+}

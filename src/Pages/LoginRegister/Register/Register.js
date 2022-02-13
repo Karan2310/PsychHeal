@@ -52,12 +52,13 @@ const Register = () => {
             axios.post(`${baseUrl}/api/signup/`, inputFields)
                 .then((res) => {
                     console.log(res);
-                    alert("Register")
+                    alert("Registered Successfully!")
                     setIsLoading(false);
                     setInputFields(initialInput)
                     window.location.href = "/";
                 })
                 .catch((error) => {
+                    setIsLoading(false);
                     console.log(error);
                     if (error.response) {
                         if (error.response.status === 406) {

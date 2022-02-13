@@ -1,0 +1,38 @@
+.profile .info-div {
+  background-color: #fff;
+  max-width: 1000px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.profile .info {
+  margin-bottom: 1rem;
+}
+
+.profile h5 {
+  font-size: 1.5rem;
+}
+
+.profile button {
+  background-color: var(--dark-blue);
+  padding: 0.6rem;
+  color: #fff;
+  border-radius: 8px;
+  outline: none;
+  border: 0;
+  transition: 0.2s ease;
+  font-weight: 600;
+  max-width: 300px;
+}
+
+.profile button:hover {
+  background-color: #0551a9;
+}
+
+.profile .loginVector {
+  width: 15rem;
+  position: absolute;
+  z-index: 5;
+  right: 20%;
+  top: 25%;
+}

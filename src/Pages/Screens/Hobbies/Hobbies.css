@@ -1,0 +1,54 @@
+.hobbies .hobbies-container {
+  background-color: #fff;
+  min-height: 80vh;
+  max-height: 80vh;
+  border-radius: 20px;
+}
+
+.hobbies .hobbies-container .cards-container {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 70vh;
+}
+
+.hobbies .hobby-card {
+  background-color: rgb(255, 209, 226);
+  padding: 1rem;
+  border-radius: 10px;
+  min-height: 100px;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover !important;
+  background-position: center !important;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.hobbies .hobby-card:hover {
+  opacity: 0.85;
+}
+
+.hobbies .hobby-card.selected {
+  opacity: 1;
+  border: 2px solid black;
+  transform: scale(1.05);
+  box-shadow: 0 0 33px -1px #0003;
+}
+
+.hobbies button {
+  background-color: var(--dark-blue);
+  padding: 0.6rem;
+  color: #fff;
+  border-radius: 8px;
+  outline: none;
+  border: 0;
+  transition: 0.2s ease;
+  font-weight: 600;
+  max-width: 300px;
+}
+
+.hobbies button:hover {
+  background-color: #0551a9;
+}
