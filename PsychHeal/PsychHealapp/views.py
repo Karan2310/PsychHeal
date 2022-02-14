@@ -28,8 +28,7 @@ from urllib3.exceptions import InsecureRequestWarning
 from django.utils.html import escape
 from django.core.paginator import Paginator
 
-HEADERS = {"x-api-token": "Industry4132Pass"}
-BASE_URL = "https://iiot.solargroup.com:6070/apiph/"
+
 
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 
